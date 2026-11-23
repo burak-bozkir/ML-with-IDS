@@ -1,0 +1,4 @@
+Model,En iyi parametreler,CV train macro F1,CV val macro F1,CV val std,Süre (sn)
+Logistic Regression,{'C': 100},0.7368781680819819,0.7244897613983161,0.01401617054986994,342
+Random Forest,"{'n_estimators': 200, 'min_samples_leaf': 5, 'max_features': 0.3, 'max_depth': 30}",0.9831786384062088,0.944927843345503,0.021335706936471455,347
+XGBoost,"{'subsample': 0.8, 'n_estimators': 400, 'max_depth': 4, 'learning_rate': 0.2, 'colsample_bytree': 0.8}",0.9979816166142609,0.9595439240393964,0.01736956264695704,443

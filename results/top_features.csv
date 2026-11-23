@@ -1,0 +1,16 @@
+Random Forest,XGBoost
+src_bytes,flag_S0
+dst_host_srv_count,service_eco_i
+dst_bytes,service_domain_u
+logged_in,root_shell
+dst_host_serror_rate,service_smtp
+service_telnet,is_guest_login
+dst_host_diff_srv_rate,service_telnet
+flag_S0,flag_SH
+count,service_http
+dst_host_same_src_port_rate,count
+srv_count,num_failed_logins
+service_http,protocol_type_icmp
+duration,service_ftp_data
+service_ftp_data,num_file_creations
+dst_host_srv_serror_rate,dst_host_serror_rate

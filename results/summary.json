@@ -1,0 +1,192 @@
+{
+  "n_train": 125973,
+  "n_test": 22544,
+  "n_features_after_prep": 121,
+  "best_model": "XGBoost",
+  "ae_threshold": 0.025477972543247913,
+  "ae_epochs": 81,
+  "ae_epochs_run": 91,
+  "ae_diag": {
+    "median_train": 0.0010241870803026638,
+    "median_val": 0.0009765521373210394,
+    "mean_train": 0.006805609994287044,
+    "mean_val": 0.1437873953595623,
+    "max_val": 807.0270136754369,
+    "mean_val_trim": 0.005206175781108983,
+    "mean_train_trim": 0.005000114927780348
+  },
+  "unseen_attack_share_test": 0.2922153822177199,
+  "tuning": {
+    "Logistic Regression": {
+      "CV train macro F1": 0.7369,
+      "CV val macro F1": 0.7245,
+      "CV val std": 0.014,
+      "Süre (sn)": 342
+    },
+    "Random Forest": {
+      "CV train macro F1": 0.9832,
+      "CV val macro F1": 0.9449,
+      "CV val std": 0.0213,
+      "Süre (sn)": 347
+    },
+    "XGBoost": {
+      "CV train macro F1": 0.998,
+      "CV val macro F1": 0.9595,
+      "CV val std": 0.0174,
+      "Süre (sn)": 443
+    }
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 100
+    },
+    "Random Forest": {
+      "n_estimators": 200,
+      "min_samples_leaf": 5,
+      "max_features": 0.3,
+      "max_depth": 30
+    },
+    "XGBoost": {
+      "subsample": 0.8,
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.2,
+      "colsample_bytree": 0.8
+    }
+  },
+  "multiclass": {
+    "Logistic Regression": {
+      "Accuracy": 0.7608,
+      "Macro Precision": 0.64,
+      "Macro Recall": 0.5607,
+      "Macro F1": 0.5686,
+      "Weighted F1": 0.7446
+    },
+    "Random Forest": {
+      "Accuracy": 0.7634,
+      "Macro Precision": 0.7317,
+      "Macro Recall": 0.502,
+      "Macro F1": 0.4975,
+      "Weighted F1": 0.7155
+    },
+    "XGBoost": {
+      "Accuracy": 0.7853,
+      "Macro Precision": 0.8503,
+      "Macro Recall": 0.5384,
+      "Macro F1": 0.5689,
+      "Weighted F1": 0.7554
+    }
+  },
+  "binary": {
+    "Logistic Regression": {
+      "Accuracy": 0.7966,
+      "Precision": 0.9075,
+      "Recall (DR)": 0.7156,
+      "F1": 0.8002,
+      "FPR": 0.0964,
+      "ROC-AUC": 0.8955,
+      "PR-AUC": 0.9005
+    },
+    "Random Forest": {
+      "Accuracy": 0.7932,
+      "Precision": 0.9679,
+      "Recall (DR)": 0.6585,
+      "F1": 0.7838,
+      "FPR": 0.0288,
+      "ROC-AUC": 0.9677,
+      "PR-AUC": 0.9696
+    },
+    "XGBoost": {
+      "Accuracy": 0.7981,
+      "Precision": 0.9698,
+      "Recall (DR)": 0.6661,
+      "F1": 0.7898,
+      "FPR": 0.0274,
+      "ROC-AUC": 0.9621,
+      "PR-AUC": 0.9597
+    },
+    "Autoencoder": {
+      "Accuracy": 0.9072,
+      "Precision": 0.9236,
+      "Recall (DR)": 0.9126,
+      "F1": 0.918,
+      "FPR": 0.0998,
+      "ROC-AUC": 0.9701,
+      "PR-AUC": 0.9706
+    },
+    "Hibrit": {
+      "Accuracy": 0.9128,
+      "Precision": 0.9241,
+      "Recall (DR)": 0.9225,
+      "F1": 0.9233,
+      "FPR": 0.1001,
+      "ROC-AUC": NaN,
+      "PR-AUC": NaN
+    }
+  },
+  "per_class_recall": {
+    "Logistic Regression": {
+      "Normal": 0.9037,
+      "DoS": 0.7946,
+      "Probe": 0.7489,
+      "R2L": 0.2211,
+      "U2R": 0.135
+    },
+    "Random Forest": {
+      "Normal": 0.9715,
+      "DoS": 0.8171,
+      "Probe": 0.6832,
+      "R2L": 0.0084,
+      "U2R": 0.03
+    },
+    "XGBoost": {
+      "Normal": 0.9726,
+      "DoS": 0.8408,
+      "Probe": 0.6444,
+      "R2L": 0.1492,
+      "U2R": 0.085
+    }
+  },
+  "seen_unseen": {
+    "Logistic Regression": {
+      "Görülen türler": 0.826,
+      "Görülmeyen türler": 0.448
+    },
+    "Random Forest": {
+      "Görülen türler": 0.7591,
+      "Görülmeyen türler": 0.4149
+    },
+    "XGBoost": {
+      "Görülen türler": 0.7992,
+      "Görülmeyen türler": 0.3437
+    },
+    "Autoencoder": {
+      "Görülen türler": 0.963,
+      "Görülmeyen türler": 0.7904
+    },
+    "Hibrit": {
+      "Görülen türler": 0.9769,
+      "Görülmeyen türler": 0.7909
+    }
+  },
+  "imbalance": {
+    "Ağırlıksız": {
+      "CV macro F1": 0.8948,
+      "Test macro F1": 0.5084,
+      "Test R2L recall": 0.0447,
+      "Test U2R recall": 0.005
+    },
+    "class_weight": {
+      "CV macro F1": 0.9449,
+      "Test macro F1": 0.4975,
+      "Test R2L recall": 0.0084,
+      "Test U2R recall": 0.03
+    },
+    "SMOTE": {
+      "CV macro F1": 0.9373,
+      "Test macro F1": 0.537,
+      "Test R2L recall": 0.0628,
+      "Test U2R recall": 0.08
+    }
+  }
+}
